@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CafeMNS - Café de quartier en France</title>
+    <title data-i18n="meta.title">CafeMNS - Café de quartier en France</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,41 +19,48 @@
           <span>Cafe</span><strong>MNS</strong>
         </a>
         <div class="nav-links">
-          <a href="#concept">Concept</a>
-          <a href="#menu">Menu</a>
-          <a href="#ambiance">Ambiance</a>
-          <a href="#contact">Contact</a>
+          <a href="#concept" data-i18n="nav.concept">Concept</a>
+          <a href="#menu" data-i18n="nav.menu">Menu</a>
+          <a href="#ambiance" data-i18n="nav.ambiance">Ambiance</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </div>
-        <button class="cta">Commander</button>
+        <button class="cta" data-i18n="nav.order">Commander</button>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Nouveau coffee shop en France</p>
-          <h1>Le café qui élève vos pauses.</h1>
-          <p class="lead">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Nouveau coffee shop en France</p>
+          <h1 data-i18n="hero.title">Le café qui élève vos pauses.</h1>
+          <div class="hero-media">
+            <img
+              src="https://images.unsplash.com/photo-1522126039546-182129aa0b93?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="CafeMNS, tasse de cafe"
+              loading="lazy"
+            />
+          </div>
+          <p class="lead" data-i18n="hero.lead">
             CafeMNS mixe le savoir-faire français, des grains responsables et
             une ambiance urbaine chic. Une alternative locale aux grandes
             chaînes, avec une signature simple et tendance.
           </p>
           <div class="hero-actions">
-            <button class="cta">Découvrir le menu</button>
-            <button class="ghost">Voir nos adresses</button>
+            <button class="cta" data-i18n="hero.cta.menu">Découvrir le menu</button>
+            <button class="ghost" data-i18n="hero.cta.addresses">Voir nos adresses</button>
           </div>
           <div class="hero-highlights">
             <div>
               <span>+40</span>
-              <p>recettes maison</p>
+              <p data-i18n="hero.highlight.recipes">recettes maison</p>
             </div>
             <div>
               <span>100%</span>
-              <p>torréfaction artisanale</p>
+              <p data-i18n="hero.highlight.roast">torréfaction artisanale</p>
             </div>
             <div>
               <span>07-19h</span>
-              <p>service non stop</p>
+              <p data-i18n="hero.highlight.hours">service non stop</p>
             </div>
           </div>
         </div>
@@ -62,12 +69,19 @@
             <p>Spécialité du mois</p>
             <h2>Mocha caramel salé</h2>
           </div>
+          <div class="monthly-drink">
+            <img
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Mocha caramel sale"
+              loading="lazy"
+            />
+          </div>
           <div class="card-bottom">
-            <p>
+            <p data-i18n="special.description">
               Chocolat intense, caramel salé, lait entier. Disponible chaud ou
               glacé.
             </p>
-            <button class="cta">Je le veux</button>
+            <button class="cta" data-i18n="special.cta">Je le veux</button>
           </div>
         </div>
       </section>
@@ -82,29 +96,29 @@
 
       <section id="concept" class="section concept">
         <div class="section-title">
-          <p>Le concept</p>
-          <h2>Une pause café française, moderne et conviviale.</h2>
+          <p data-i18n="concept.title">Le concept</p>
+          <h2 data-i18n="concept.subtitle">Une expérience café française, simple et inspirée.</h2>
         </div>
         <div class="concept-grid">
           <article>
-            <h3>Origines choisies</h3>
-            <p>
-              Des cafés sélectionnés à la ferme, une traçabilité claire et des
-              partenaires engagés sur la qualité.
+            <h3 data-i18n="concept.item1.title">Grains responsables</h3>
+            <p data-i18n="concept.item1.body">
+              Des origines tracées, un sourcing transparent et une chaîne courte
+              avec des torréfacteurs partenaires.
             </p>
           </article>
           <article>
-            <h3>Esprit de quartier</h3>
-            <p>
-              Un décor lumineux, des matières douces et une ambiance calme pour
-              prendre le temps.
+            <h3 data-i18n="concept.item2.title">Design urbain</h3>
+            <p data-i18n="concept.item2.body">
+              Matières naturelles, lumière douce et playlist soignées pour
+              transformer votre pause en rituel.
             </p>
           </article>
           <article>
-            <h3>Recettes de saison</h3>
-            <p>
-              Des boissons signatures et des douceurs maison qui évoluent au fil
-              des mois.
+            <h3 data-i18n="concept.item3.title">Recettes créatives</h3>
+            <p data-i18n="concept.item3.body">
+              Cafés signatures, boissons froides et douceurs de saison, tout est
+              fait sur place chaque matin.
             </p>
           </article>
         </div>
@@ -112,8 +126,8 @@
 
       <section id="menu" class="section menu">
         <div class="section-title">
-          <p>Menu</p>
-          <h2>Le meilleur de nos incontournables.</h2>
+          <p data-i18n="menu.title">Menu</p>
+          <h2 data-i18n="menu.subtitle">Le meilleur de nos incontournables.</h2>
         </div>
         <div class="menu-grid">
           <div class="menu-item">
@@ -123,8 +137,8 @@
               <path d="M7 6c0-1 1-2 2-2" />
               <path d="M11 6c0-1 1-2 2-2" />
             </svg>
-            <h3>Espresso signature</h3>
-            <p>Corse, chocolat noir, caramel.</p>
+            <h3 data-i18n="menu.item.espresso.title">Espresso signature</h3>
+            <p data-i18n="menu.item.espresso.body">Corse, chocolat noir, caramel.</p>
             <span>2,40 EUR</span>
           </div>
           <div class="menu-item">
@@ -133,8 +147,8 @@
               <path d="M15 10h3a2 2 0 0 1 0 4h-3" />
               <path d="M9 13c1.5-1.8 3.5-1.8 5 0" />
             </svg>
-            <h3>Flat white vanille</h3>
-            <p>Vanille bourbon, micro-mousse.</p>
+            <h3 data-i18n="menu.item.flat.title">Flat white vanille</h3>
+            <p data-i18n="menu.item.flat.body">Vanille bourbon, micro-mousse.</p>
             <span>4,20 EUR</span>
           </div>
           <div class="menu-item">
@@ -144,8 +158,8 @@
               <path d="M12 2v4" />
               <path d="M8 12h8" />
             </svg>
-            <h3>Cold brew agrumes</h3>
-            <p>Infusion lente, zestes d'orange.</p>
+            <h3 data-i18n="menu.item.cold.title">Cold brew agrumes</h3>
+            <p data-i18n="menu.item.cold.body">Infusion lente, zestes d'orange.</p>
             <span>4,80 EUR</span>
           </div>
           <div class="menu-item">
@@ -153,8 +167,8 @@
               <path d="M12 3c-2.5 3-6 3.5-6 8a6 6 0 0 0 12 0c0-4.5-3.5-5-6-8z" />
               <path d="M12 9c-1.2 1.6-3.2 2.2-3.2 4.4a3.2 3.2 0 0 0 6.4 0c0-2.2-2-2.8-3.2-4.4z" />
             </svg>
-            <h3>Matcha coco</h3>
-            <p>Matcha Uji, lait de coco frais.</p>
+            <h3 data-i18n="menu.item.matcha.title">Matcha coco</h3>
+            <p data-i18n="menu.item.matcha.body">Matcha Uji, lait de coco frais.</p>
             <span>5,20 EUR</span>
           </div>
           <div class="menu-item">
@@ -164,8 +178,8 @@
               <path d="M7 7c0-1.5 2-1.5 2-3" />
               <path d="M11 7c0-1.5 2-1.5 2-3" />
             </svg>
-            <h3>Chai latte épices</h3>
-            <p>Cannelle, cardamome, gingembre.</p>
+            <h3 data-i18n="menu.item.chai.title">Chai latte épices</h3>
+            <p data-i18n="menu.item.chai.body">Cannelle, cardamome, gingembre.</p>
             <span>4,90 EUR</span>
           </div>
           <div class="menu-item">
@@ -176,8 +190,8 @@
               <circle cx="14" cy="14" r="1" fill="currentColor" />
               <circle cx="8" cy="15" r="1" fill="currentColor" />
             </svg>
-            <h3>Cookie fondant</h3>
-            <p>Chocolat noir, fleur de sel.</p>
+            <h3 data-i18n="menu.item.cookie.title">Cookie fondant</h3>
+            <p data-i18n="menu.item.cookie.body">Chocolat noir, fleur de sel.</p>
             <span>2,90 EUR</span>
           </div>
         </div>
@@ -185,8 +199,8 @@
 
       <section id="temoignages" class="section testimonials">
         <div class="section-title">
-          <p>Témoignages</p>
-          <h2>Ils ont adopté CafeMNS.</h2>
+          <p data-i18n="testimonials.title">Témoignages</p>
+          <h2 data-i18n="testimonials.subtitle">Ils ont adopté CafeMNS.</h2>
         </div>
         <div class="testimonials-grid">
           <article class="testimonial-card">
@@ -194,7 +208,7 @@
               src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23E6D5C4'/%3E%3Ccircle cx='100' cy='80' r='40' fill='%23C47E5A'/%3E%3Crect x='40' y='120' width='120' height='60' rx='30' fill='%233A2B24'/%3E%3C/svg%3E"
               alt="Portrait de Camille"
             />
-            <p>
+            <p data-i18n="testimonials.quote1">
               "Le flat white est impeccable et l'ambiance est parfaite pour une
               pause entre deux rendez-vous."
             </p>
@@ -205,7 +219,7 @@
               src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23F1E3D6'/%3E%3Ccircle cx='100' cy='78' r='38' fill='%239AA08B'/%3E%3Crect x='42' y='118' width='116' height='62' rx='30' fill='%233A2B24'/%3E%3C/svg%3E"
               alt="Portrait de Jules"
             />
-            <p>
+            <p data-i18n="testimonials.quote2">
               "Des recettes créatives sans chichi. Le cold brew agrumes est
               devenu mon rituel du vendredi."
             </p>
@@ -216,7 +230,7 @@
               src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23EADACB'/%3E%3Ccircle cx='100' cy='82' r='41' fill='%23D18B6A'/%3E%3Crect x='38' y='122' width='124' height='58' rx='30' fill='%233A2B24'/%3E%3C/svg%3E"
               alt="Portrait de Sarah"
             />
-            <p>
+            <p data-i18n="testimonials.quote3">
               "On sent le soin dans les détails, de la playlist au cookie
               fondant. L'accueil est top."
             </p>
@@ -228,27 +242,27 @@
       <section id="ambiance" class="section ambience">
         <div class="ambience-card">
           <div>
-            <p>Ambiance</p>
-            <h2>Un lieu qui respire l'énergie parisienne.</h2>
-            <p>
+            <p data-i18n="ambience.title">Ambiance</p>
+            <h2 data-i18n="ambience.subtitle">Un lieu qui respire l'énergie parisienne.</h2>
+            <p data-i18n="ambience.body">
               Banquettes en velours, bar en travertin, plantes XXL et coins
               silencieux pour travailler. CafeMNS est pensé pour les matins
               pressés et les après-midi créatifs.
             </p>
-            <button class="ghost">Voir la galerie</button>
+            <button class="ghost" data-i18n="ambience.cta">Voir la galerie</button>
           </div>
           <div class="ambience-stats">
             <div>
               <span>3</span>
-              <p>villes en France</p>
+              <p data-i18n="ambience.stats.cities">villes en France</p>
             </div>
             <div>
               <span>12</span>
-              <p>adresses lumineuses</p>
+              <p data-i18n="ambience.stats.addresses">adresses lumineuses</p>
             </div>
             <div>
               <span>4.9</span>
-              <p>note moyenne</p>
+              <p data-i18n="ambience.stats.rating">note moyenne</p>
             </div>
           </div>
         </div>
@@ -257,33 +271,58 @@
       <section id="contact" class="section contact">
         <div class="contact-card">
           <div>
-            <p>Contact</p>
-            <h2>Parlons café, projets ou privatisations.</h2>
-            <p>
+            <p data-i18n="contact.title">Contact</p>
+            <h2 data-i18n="contact.subtitle">Parlons café, projets ou privatisations.</h2>
+            <p data-i18n="contact.body">
               Une question, une demande pro ou un retour sur votre passage ?
               Écrivez-nous, on vous répond vite.
             </p>
           </div>
           <div class="map-card">
-            <p>Nous trouver</p>
+            <p data-i18n="contact.mapTitle">Nous trouver</p>
             <div class="map-frame">
               <iframe
                 title="CafeMNS Paris"
+                data-i18n-title="contact.mapFrameTitle"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=2.3300%2C48.8670%2C2.3420%2C48.8735&layer=mapnik&marker=48.8702%2C2.3360"
                 loading="lazy"
               ></iframe>
             </div>
-            <p class="map-note">18 rue des Fleurs, 75002 Paris</p>
+            <p class="map-note" data-i18n="contact.address">18 rue des Fleurs, 75002 Paris</p>
           </div>
           <form class="contact-form" action="#">
-            <p>Nous contacter</p>
+            <p data-i18n="contact.form.title">Nous contacter</p>
             <div class="form-row">
-              <input type="text" name="prenom" placeholder="Prenom" required />
-              <input type="text" name="nom" placeholder="Nom" required />
+              <input
+                type="text"
+                name="prenom"
+                placeholder="Prenom"
+                data-i18n-placeholder="contact.form.firstName"
+                required
+              />
+              <input
+                type="text"
+                name="nom"
+                placeholder="Nom"
+                data-i18n-placeholder="contact.form.lastName"
+                required
+              />
             </div>
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
-            <button class="cta" type="submit">Envoyer</button>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              data-i18n-placeholder="contact.form.email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Votre message"
+              data-i18n-placeholder="contact.form.message"
+              rows="4"
+              required
+            ></textarea>
+            <button class="cta" type="submit" data-i18n="contact.form.submit">Envoyer</button>
           </form>
         </div>
       </section>
@@ -294,18 +333,19 @@
         <a class="logo" href="#">
           <span>Cafe</span><strong>MNS</strong>
         </a>
-        <p>
+        <p data-i18n-html="footer.address">
           18 rue des Fleurs, 75002 Paris<br />
           hello@cafemns.fr · 01 84 20 30 40
         </p>
       </div>
       <div class="footer-links">
-        <a href="#concept">Concept</a>
-        <a href="#menu">Menu</a>
-        <a href="#ambiance">Ambiance</a>
-        <a href="#">Instagram</a>
+        <a href="#concept" data-i18n="footer.concept">Concept</a>
+        <a href="#menu" data-i18n="footer.menu">Menu</a>
+        <a href="#ambiance" data-i18n="footer.ambiance">Ambiance</a>
+        <a href="#" data-i18n="footer.instagram">Instagram</a>
       </div>
-      <p class="footer-note">© 2026 CafeMNS. Tous droits réservés.</p>
+      <p class="footer-note" data-i18n="footer.note">© 2026 CafeMNS. Tous droits réservés.</p>
     </footer>
+    <script src="i18n.js" defer></script>
   </body>
 </html>
