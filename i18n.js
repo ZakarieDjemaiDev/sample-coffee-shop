@@ -7,6 +7,7 @@ const translations = {
     "nav.menu": "Menu",
     "nav.ambiance": "Ambience",
     "nav.contact": "Contact",
+    "nav.language": "Language",
     "nav.order": "Order",
     "hero.eyebrow": "New coffee shop in France",
     "hero.title": "The cafe that elevates your breaks.",
@@ -88,6 +89,7 @@ const translations = {
     "nav.menu": "Menü",
     "nav.ambiance": "Ambiente",
     "nav.contact": "Kontakt",
+    "nav.language": "Sprache",
     "nav.order": "Bestellen",
     "hero.eyebrow": "Neuer Coffee-Shop in Frankreich",
     "hero.title": "Der Kaffee, der Ihre Pausen aufwertet.",
@@ -224,6 +226,16 @@ const applyTranslations = (lang) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   captureDefaults();
+
+  const languageSelect = document.querySelector("[data-language-select]");
+  if (languageSelect) {
+    languageSelect.value = defaultLang;
+    languageSelect.addEventListener("change", (event) => {
+      applyTranslations(event.target.value);
+    });
+  }
+
+  applyTranslations(defaultLang);
 });
 
 window.i18n = {
